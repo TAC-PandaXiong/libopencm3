@@ -36,7 +36,7 @@ if "%COMPILER_BASE%" == "" (
 
 :: add base tools & project compiler search path
 path %COMPILER_BASE%\msys\bin;%COMPILER_BASE%\MinGW\bin
-path %COMPILER_BASE%\gcc-arm-none-eabi-4_9-2015q3-20150921-win32\bin;%PATH%
+path %COMPILER_BASE%\gcc-arm-none-eabi-9-2019-q4-major-win32\bin;%PATH%
 path %COMPILER_BASE%\python;%PATH%
 
 :: set title & clear screen
