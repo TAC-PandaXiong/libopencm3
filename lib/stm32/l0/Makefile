@@ -21,8 +21,8 @@ LIBNAME		= libopencm3_stm32l0
 SRCLIBDIR	?= ../..
 
 CC		= $(PREFIX)gcc
-AR		= $(PREFIX)ar
-TGT_CFLAGS	= -Os \
+AR		= $(PREFIX)gcc-ar
+TGT_CFLAGS	= -Os -flto \
 		  -Wall -Wextra -Wimplicit-function-declaration \
 		  -Wredundant-decls -Wmissing-prototypes -Wstrict-prototypes \
 		  -Wundef -Wshadow \

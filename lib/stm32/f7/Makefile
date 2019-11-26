@@ -22,12 +22,12 @@ LIBNAME		= libopencm3_stm32f7
 SRCLIBDIR	?= ../..
 
 CC		= $(PREFIX)gcc
-AR		= $(PREFIX)ar
+AR		= $(PREFIX)gcc-ar
 
 # STM32F7 only supports single precision FPU
 FP_FLAGS	?= -mfloat-abi=hard -mfpu=fpv5-sp-d16
 
-TGT_CFLAGS	= -Os \
+TGT_CFLAGS	= -Os -flto \
 		  -Wall -Wextra -Wimplicit-function-declaration \
 		  -Wredundant-decls -Wmissing-prototypes -Wstrict-prototypes \
 		  -Wundef -Wshadow \
